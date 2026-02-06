@@ -13,6 +13,11 @@ package com.project.runner;
     public class TestRunner extends AbstractTestNGCucumberTests {
         
         @Test(priority = 0)
+        public void runOpencreatenewjobopeningfor() {
+            runCucumberFeature("src/test/resources/com/tap-project-1/features/OpenCreateNewJobOpeningFor.feature");
+        }
+    
+    @Test(priority = 1)
         public void runCreatejobopeningPositive() {
             runCucumberFeature("src/test/resources/com/tap-project-1/features/CreateJobOpening_positive.feature");
         }
